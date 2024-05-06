@@ -1,7 +1,7 @@
 Este es el repositorio de la última práctica de la asignatura DISEÑO DE SISTEMAS ELÉCTRONICOS, ejecutado por David Pérez Pérez y Cristian Fernández Díaz
 Se ha llevado a cabo la creación de un videojuego que se muestra por pantalla mediante el protocolo VGA, usando una Nexys4 y código VHDL. Se tiene un circuito y dos jugadores, el fantasma controlado por la máquina, el coche controlado por el jugador. Hay que darle al botón central (btnC) para que comience el juego, el personaje del jugador se controla con los botones de la placa btnR, btnL, btnU y btnD. Cuando algún jugador pase por la línea de meta se parará el cronómetro. Si se quiere volver a jugar, se ha de subir y bajar el sw1 de la placa, que sirve de reset.
 
-Descripción breve de cada uno de los .vhd que forman parte del proyecto
+Descripción breve de cada una de las carpetas y de los .vhd que forman parte del proyecto
 biestables : 	
 		biestables d : 2 biestables d en cascada
 		biestable t : biestable t
