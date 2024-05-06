@@ -13,6 +13,8 @@ comparadores :
 		comparadores : implementación de dos comparadores
 		comparator : implementación comparador
 		
+contrain : archivo de constrain .xdc del proyecto		
+		
 contadores : 
 	contador_generico : contador generico con finales de cuenta variable
 	cronometro : contadores en cascada, capaces de contar de décimas hasta minutos
