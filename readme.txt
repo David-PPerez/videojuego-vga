@@ -6,7 +6,9 @@ biestables :
 		biestables d : 2 biestables d en cascada
 		biestable t : biestable t
 		biestables : implementación de 2 biestables d y 1 biestable t en cascada
-		
+
+bitstream : bitstream que muestra el juego en su totalidad
+
 comparadores :
 		comparadores : implementación de dos comparadores
 		comparator : implementación comparador
