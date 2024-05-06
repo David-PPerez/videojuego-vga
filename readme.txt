@@ -58,5 +58,6 @@ testbenches :
 	sim_parada : testbench del detector de secuencia que comprueba si se ha llegado a la línea de meta	
 
 	control_jugador : relaciona las pulsaciones de los botones de la placa con una variable "pulsos" que entra a la máquina de estados del jugador	
+	P4_DAVIDPEREZ_CRISTIANFDEZ : Archivo comprimido del proyecto completo
 	pinta : se encarga de qué pintar en cada lugar de la pantalla
 	TOP : implementación de todos los componentes para llevar a cabo el juego
