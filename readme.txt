@@ -64,4 +64,4 @@ testbenches :
 	P4_DAVIDPEREZ_CRISTIANFDEZ : Archivo comprimido del proyecto completo
 	pinta : se encarga de qué pintar en cada lugar de la pantalla
 	TOP : implementación de todos los componentes para llevar a cabo el juego
-	P4_DAVIDPEREZ_CRISTIANFDEZ : Archivo comprimido con lo requerido en la práctica final
+	P4_CRISTIANFDEZ_DAVIDPEREZ : Archivo comprimido con lo requerido en la práctica final
