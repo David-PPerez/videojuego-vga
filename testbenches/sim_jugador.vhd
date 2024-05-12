@@ -72,9 +72,9 @@ begin
     rst <= '1', '0' after 10 ns;
     vel <= not(vel) after periodo;
     play <= '0', '1' after 20 ns;
-    pulso_derecha <= '0', '1' after 40 ns, '0' after 300 ns; 
-    pulso_izquierda <= '0', '1' after 400 ns, '0' after 600 ns; 
-    pulso_arriba <= '0', '1' after 100 ns, '0' after 600 ns; 
-    pulso_abajo <= '0', '1' after 500 ns, '0' after 600 ns; 
+    pulso_derecha <= '0', '1' after 80 ns, '0' after 280 ns; 
+    pulso_izquierda <= '0', '1' after 340 ns, '0' after 600 ns; 
+    pulso_arriba <= '0', '1' after 160 ns, '0' after 450 ns; 
+    pulso_abajo <= '0', '1' after 500 ns, '0' after 700 ns; 
     pulsos <= pulso_derecha & pulso_abajo & pulso_izquierda & pulso_arriba;
 end Behavioral;
