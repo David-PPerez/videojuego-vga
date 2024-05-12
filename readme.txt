@@ -57,7 +57,8 @@ testbenches :
 	sim : testbench de la implementación del videojuego completa
 	sim_control : testbench del control de pulsaciones de los botones de la placa
 	sim_jugador : testbench de la máquina de estados que rige el comportamiento del personaje controlado por el jugador
-	sim_parada : testbench del detector de secuencia que comprueba si se ha llegado a la línea de meta	
+	sim_parada : testbench del detector de secuencia que comprueba si se ha llegado a la línea de meta
+	sim_bordeo : testbench de la máquina de estados del personaje automático
 
 	control_jugador : relaciona las pulsaciones de los botones de la placa con una variable "pulsos" que entra a la máquina de estados del jugador	
 	P4_DAVIDPEREZ_CRISTIANFDEZ : Archivo comprimido del proyecto completo
