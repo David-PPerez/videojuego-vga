@@ -36,24 +36,26 @@ entity sim_jugador is
 end sim_jugador;
 
 architecture Behavioral of sim_jugador is
-component fsm_jugador is
-  Port (
+    component fsm_jugador is
+    Port (
         clk : in std_logic;
         rst : in std_logic;
         vel : in std_logic;
         play : in std_logic;
-        pulso_derecha, pulso_izquierda, pulso_arriba, pulso_abajo : in std_logic;
+        pulsos : in std_logic_vector(3 downto 0);
         jug_pista : out std_logic;
         col_jugador : out unsigned(4 downto 0);
-        fila_jugador : out unsigned(4 downto 0)
+        fila_jugador : out unsigned(4 downto 0);
+        estado : out unsigned(3 downto 0)
          );
-end component;
+    end component;
     signal clk, vel : std_logic := '1';
     signal rst,  play, jug_pista : std_logic ;
     signal pulso_derecha, pulso_izquierda, pulso_arriba, pulso_abajo : std_logic;
     signal col_jugador, fila_jugador : unsigned(4 downto 0);
     constant frecuencia : integer := 100;
     constant periodo : time := 1 us/frecuencia;
+   signal pulsos : std_logic_vector(3 downto 0);
 begin
     UUT : fsm_jugador
         port map(
@@ -61,10 +63,7 @@ begin
             rst => rst,
             vel => vel,
             play => play,
-            pulso_derecha => pulso_derecha,
-            pulso_izquierda => pulso_izquierda,
-            pulso_arriba => pulso_arriba,
-            pulso_abajo => pulso_abajo,
+            pulsos => pulsos,
             jug_pista => jug_pista,
             col_jugador => col_jugador,
             fila_jugador => fila_jugador);
@@ -77,5 +76,5 @@ begin
     pulso_izquierda <= '0', '1' after 400 ns, '0' after 600 ns; 
     pulso_arriba <= '0', '1' after 100 ns, '0' after 600 ns; 
     pulso_abajo <= '0', '1' after 500 ns, '0' after 600 ns; 
-
+    pulsos <= pulso_derecha & pulso_abajo & pulso_izquierda & pulso_arriba;
 end Behavioral;
